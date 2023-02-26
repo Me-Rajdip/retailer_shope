@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="G.gif">
+    <title>Order Completed</title>
+</head>
+<body style="background-color: rgb(5, 5, 113);">
+    <div class="contener">
+        <audio id="ado" controls autoplay="myFunction()">
+            <source src="Mp3/1.mp3" type="audio/mpeg">
+            <!----<source src="Mp3/3.mp3"type="audio/mpeg">--->
+          </audio>
+        <img id="gif" src="Img/OC.gif" alt="BuyNow">
+       <span>Order Completed</span> 
+    </div>
+</body>
+<style>
+
+    #ado{
+        display: none;
+    }
+
+    .contener{
+    font-size: 10px;
+    /*background-color: brown;*/
+    min-height: 72vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: 40%;
+    color: white;
+    font-family: cursive;
+    margin: 23px auto;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+    align-items: center;
+}
+#gif{
+    min-height: 25vh;
+    /*height: 350px;*/
+    width: 30%;
+    align-items: center;
+    border-radius: 180px;
+    
+}
+</style>
+
+<script>
+   function myFunction() {
+  var x = document.getElementById("ado").autoplay;
+}
+</script>
+</html>

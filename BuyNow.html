@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Conpatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="shortcut icon" type="x-icon" href="G.gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li class="Brand"><img src="LogoShop21620226389.png" alt="R_B MUSIC"></li>
+          <li><a href="New.html">Home </a> </li>
+          <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <section class="buynow">
+        <div class="contener">
+        <div >
+            <img class="ig" src="Img/Rice.jpg" alt="BuyNow">
+            <div class="nm">Rice</div>
+            <div class="stars">
+                <span>Ratting : </span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="pay"><input type="checkbox" id="onlinepay" onClick="uncheck(1);">Online Payment</div>
+            <div class="pay"><input type="checkbox" id="cashondeli" onClick="uncheck(2);">Cash on delivery</div>
+            <div ><input type="button" value="Buy Now" class="btn" onclick="Completed()"></input></div>
+        </div>
+        </div>
+    </section>
+    
+    <section class="footer" id="about">
+            <div class="box-container">
+              <div class="box">
+                  <h3> GROCETERIA</h3>
+                  <p>Midnapore College (Autonomous)
+                    College in Midnapore, West Bengal, Pin- 721101</p>
+                  <div class="share">
+                      <a href="#" class="fab fa-facebook-f"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                      <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+              </div>
+        
+              <div class="box">
+                  <h3>Contact Info</h3>
+                  <a href="#" class="links"> <i class="fas fa-phone"></i> +91 6564989120 </a>
+                  <a href="#" class="links"> <i class="fas fa-phone"></i> +91 9832811680 </a>
+                  <a href="#" class="links"> <i class="fas fa-envelope"></i> group5AKRSS@gmail.com </a>
+                  <a href="https://www.google.com/maps/place/Midnapore+College+(Autonomous)/@22.4224242,87.3257834,18.22z/data=!4m5!3m4!1s0x3a1d5b3bcc29398b:0xe94546a441c77821!8m2!3d22.4223904!4d87.3272102" class="links"> <i class="fas fa-map-marker-alt"></i> Midnapore ,WB-721101 </a>
+              </div>
+        
+              <div class="box">
+                  <h3>News Letter</h3>
+              </div>
+            </div>
+          <div class="credit"> Created by <span>Developers of Group 5 </span> |&#128526; &#129313;</div>
+        
+        </section>
+        
+</body>
+<style>
+
+:root{
+                --pink:#ff0077;
+                --green:#04532c;
+                --light-color:#666;
+                --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+                --border:.2rem solid rgba(0,0,0,.1);
+                --outline:.1rem solid rgba(0,0,0,.1);
+                --outline-hover:.2rem solid var(--green);
+            }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+nav ul{
+    align-items: center;
+    display: flex;
+    padding: 0px;
+    height: 70px;
+    list-style-type: none;
+    background-color: rgb(164, 199, 8);
+}
+
+nav ul li{
+    padding: 0 12px;
+    font-size: 20px;
+    font-weight: 55;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:inherit;
+    text-decoration: none;
+}
+nav ul li:hover{
+    color: #0af806;
+}
+
+.Brand img{
+    border-radius: 66px;
+    height: 60px;
+    width: 60px;
+}
+.Brand{
+    align-items: center;
+    display: flex;
+    font-weight: bolder;
+
+}
+
+
+.buynow{
+    background-image: url("BG.jpg");
+    background-repeat:round;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+.contener{
+    font-size: 10px;
+    background-color: rgb(168, 4, 146);
+    min-height: 72vh;
+    display: flex;
+    width: 40%;
+    color: white;
+    font-family: cursive;
+    margin: 23px auto;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(255, 7, 135);
+    padding: 15px;
+}
+.stars{
+    color: red;
+}
+.stars:hover{
+    color: blue;
+}
+.stars span{
+    color: #04532c;
+}
+.btn{
+    background-color: #0af806;   
+    width: 100%;  
+    color: rgb(7, 1, 1);   
+    padding: 15px;      
+    border-radius: 10px;   
+    cursor: pointer;
+    font-size: 25px;
+    font-family: fantasy; 
+}
+.btn:hover{
+    background-color: #ff0077;
+    color: #f7f1f4;
+}
+.ig{
+    min-height: 72vh;
+    /*height: 350px;*/
+    width: 80%;
+    align-items: center;
+    border-radius: 50px 10px 50px 10px;
+}
+.nm{
+    font-size: 30px;
+    color: rgb(2, 10, 12);
+}
+.nm:hover{
+    color: yellow;
+}
+.pay{
+    padding: 5px;
+    font-size: 15px;
+    color: rgb(3, 4, 4);
+}
+.pay input{
+    cursor: pointer;
+}
+
+
+
+.footer{
+             background: rgb(7, 7, 7);
+         }
+
+         .footer .box-container{
+             display: grid;
+             grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+             gap:1.5rem;
+         }
+
+         .footer .box-container .box h3{
+             /*font-size: 2.5rem;*/
+             font-size: 35px;
+             color:var(--green);
+             padding:1rem 0;
+         }
+
+         .footer .box-container .box .links{
+             display: block;
+             font-size: 20px;
+             color:var(--light-color);
+             padding:1rem 0;
+         }
+
+         .footer .box-container .box .links i{
+             color:var(--orange);
+             padding-right: .5rem;
+         }
+
+         .footer .box-container .box p{
+             line-height: 1.8;
+             font-size: 20px;
+             color:var(--light-color);
+             padding:1rem 0;
+         }
+
+        .footer .box-container .box .share a{
+             height:2rem;
+             width:2rem;
+             line-height:2rem;
+             border-radius: .5rem;
+             font-size: 20px;
+             color:rgb(6, 59, 128);
+             margin-right: .2rem;
+             background: #eee;
+             text-align: center;
+        }
+
+         .footer .credit{
+             text-align: center;
+             margin-top: 2rem;
+             padding:1rem;
+             padding-top: 2.5rem;
+             font-size: 20px;
+             color:red;
+             border-top: var(--border);
+         }
+
+         .footer .credit span{
+             color:blue;
+         }
+</style>
+
+<script> 
+function uncheck(check)
+{
+    var onp = document.getElementById("onlinepay");
+    var cond = document.getElementById("cashondeli");
+    if (onp.checked == true && cond.checked == true)
+    {
+        if(check == 1)
+        {
+            cond.checked = false;
+        }
+        else if(check == 2)
+        {
+            onp.checked = false;
+        }
+    }
+ 
+}
+
+function Completed(){
+    window.location = "Complete.html"; 
+}
+</script>
+</html>
